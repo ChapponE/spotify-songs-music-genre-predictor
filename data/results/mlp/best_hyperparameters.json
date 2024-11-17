@@ -1,0 +1,17 @@
+{
+    "model_params": {
+        "hidden_layers": [
+            64,
+            32
+        ]
+    },
+    "train_params": {
+        "batch_size": 32,
+        "epochs": 70,
+        "learning_rate": 0.01
+    },
+    "average_train_accuracy": 1.0,
+    "average_val_accuracy": 0.32000000178813937,
+    "average_train_loss": 0.0014538042712956667,
+    "average_val_loss": 5.5359336853027346
+}
