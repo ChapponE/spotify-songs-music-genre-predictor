@@ -1,7 +1,13 @@
-pandas
+# Data Processing
 numpy
+pandas
+joblib
 scikit-learn
+
+# Deep Learning
 tensorflow
+keras
+
+# Visualization
 matplotlib
 seaborn
-joblib
