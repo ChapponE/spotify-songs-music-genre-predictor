@@ -1,6 +1,24 @@
-# Classe de base pour les modèles
-class BaseModel:
-    def train(self, X_train, y_train, X_val=None, y_val=None):
+import torch.nn as nn
+import torch
+
+# Classe de base pour les modèles utilisant PyTorch
+class BaseModel(nn.Module):
+    def __init__(self):
+        super(BaseModel, self).__init__()
+
+    def forward(self, X):
+        """
+        Forward pass du modèle.
+
+        Paramètres:
+        - X: Features d'entrée
+
+        Retourne:
+        - Prédictions du modèle
+        """
+        raise NotImplementedError("La méthode forward doit être implémentée par les sous-classes.")
+
+    def train_model(self, X_train, y_train, X_val=None, y_val=None):
         """
         Entraîne le modèle avec les données fournies.
 
@@ -10,7 +28,7 @@ class BaseModel:
         - X_val: Features de validation (optionnel)
         - y_val: Labels de validation (optionnel)
         """
-        raise NotImplementedError("La méthode train doit être implémentée par les sous-classes.")
+        raise NotImplementedError("La méthode train_model doit être implémentée par les sous-classes.")
 
     def evaluate(self, X_test, y_test):
         """
@@ -22,18 +40,6 @@ class BaseModel:
         """
         raise NotImplementedError("La méthode evaluate doit être implémentée par les sous-classes.")
 
-    def predict(self, X):
-        """
-        Prédit les labels pour les features fournies.
-
-        Paramètres:
-        - X: Features d'entrée
-
-        Retourne:
-        - Prédictions du modèle
-        """
-        raise NotImplementedError("La méthode predict doit être implémentée par les sous-classes.")
-
     def save(self, filepath):
         """
         Sauvegarde le modèle sur le disque.
@@ -41,7 +47,7 @@ class BaseModel:
         Paramètres:
         - filepath: Chemin du fichier pour sauvegarder le modèle
         """
-        raise NotImplementedError("La méthode save doit être implémentée par les sous-classes.")
+        torch.save(self.state_dict(), filepath)
 
     def load(self, filepath):
         """
@@ -50,4 +56,4 @@ class BaseModel:
         Paramètres:
         - filepath: Chemin du fichier pour charger le modèle
         """
-        raise NotImplementedError("La méthode load doit être implémentée par les sous-classes.")
+        self.load_state_dict(torch.load(filepath))

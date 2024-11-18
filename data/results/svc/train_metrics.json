@@ -1,0 +1,282 @@
+[
+    {
+        "accuracy": [
+            0.5875
+        ],
+        "val_accuracy": [
+            0.3
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6125
+        ],
+        "val_accuracy": [
+            0.25
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6375
+        ],
+        "val_accuracy": [
+            0.4
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.65
+        ],
+        "val_accuracy": [
+            0.3
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.625
+        ],
+        "val_accuracy": [
+            0.4
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.75
+        ],
+        "val_accuracy": [
+            0.4
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.725
+        ],
+        "val_accuracy": [
+            0.15
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6875
+        ],
+        "val_accuracy": [
+            0.25
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.675
+        ],
+        "val_accuracy": [
+            0.25
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.725
+        ],
+        "val_accuracy": [
+            0.4
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.7625
+        ],
+        "val_accuracy": [
+            0.45
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.8
+        ],
+        "val_accuracy": [
+            0.25
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.8625
+        ],
+        "val_accuracy": [
+            0.35
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.825
+        ],
+        "val_accuracy": [
+            0.25
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.8
+        ],
+        "val_accuracy": [
+            0.45
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.8
+        ],
+        "val_accuracy": [
+            0.45
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.8625
+        ],
+        "val_accuracy": [
+            0.35
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.875
+        ],
+        "val_accuracy": [
+            0.4
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.875
+        ],
+        "val_accuracy": [
+            0.2
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.85
+        ],
+        "val_accuracy": [
+            0.45
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    }
+]

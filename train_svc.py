@@ -1,78 +1,72 @@
+# train_svc.py
+
 import os
 import joblib
 import pandas as pd
-import matplotlib.pyplot as plt
 from src.data.data_loader import load_data_preprocessed
-from src.utils.config import OUTPUT_DIR, SVC_PARAM_GRID, N_SPLITS, BASE_DIR
+from src.utils.config import OUTPUT_DIR, SVC_PARAM_GRID, N_SPLITS
+from src.utils.cross_valid import CrossValidator
+from src.models.svc_model import SVCModel
 from src.visualization.plots import plot_metrics
-from sklearn.svm import SVC
-from sklearn.model_selection import GridSearchCV
 
 def main():
     # Charger les données prétraitées
     X, y, scaler, label_encoder = load_data_preprocessed()
 
-    # Définir le modèle SVM
-    svc = SVC(probability=False, random_state=42)
+    # Définir la grille d'hyperparamètres pour le SVC
+    model_param_grid = SVC_PARAM_GRID
+    train_param_grid = {}  # SVC n'a pas de paramètres d'entraînement spécifiques
 
-    # Définir la grille d'hyperparamètres pour GridSearchCV
-    param_grid = SVC_PARAM_GRID
+    # Définir les paramètres fixes
+    fixed_params = {
+        'probability': False,
+        'random_state': 42
+    }
 
-    # Initialiser GridSearchCV avec return_train_score=True
-    grid_search = GridSearchCV(
-        estimator=svc,
-        param_grid=param_grid,
-        cv=N_SPLITS,
-        scoring='accuracy',
-        n_jobs=-1,
-        verbose=1,
-        return_train_score=True
+    # Initialiser et exécuter la validation croisée pour le SVC
+    cross_validator = CrossValidator(
+        model_class=SVCModel,
+        model_param_grid=model_param_grid,
+        train_param_grid=train_param_grid,
+        X=X,
+        y=y,
+        n_splits=N_SPLITS,
+        fixed_params=fixed_params
     )
+    best_result = cross_validator.perform_cross_validation()
 
-    # Exécuter la recherche d'hyperparamètres avec validation croisée
-    grid_search.fit(X, y)
-
-    # Extraire les meilleurs hyperparamètres et le meilleur modèle
-    best_params = grid_search.best_params_
-    best_score = grid_search.best_score_
-    best_model = grid_search.best_estimator_
-
-    print(f"Meilleurs hyperparamètres: {best_params}")
-    print(f"Meilleur score de validation croisée: {best_score:.4f}")
-
-    # Sauvegarder le meilleur modèle et les objets de prétraitement
-    if not os.path.exists(OUTPUT_DIR):
-        os.makedirs(OUTPUT_DIR)
-
-    model_path = os.path.join(BASE_DIR, 'best_svc_model.pkl')
-    joblib.dump(best_model, model_path)
-    joblib.dump(scaler, os.path.join(OUTPUT_DIR, 'scaler.pkl'))
-    joblib.dump(label_encoder, os.path.join(OUTPUT_DIR, 'label_encoder.pkl'))
-
-    print("Entraînement terminé et meilleur modèle SVM sauvegardé.")
-
-    # Extraire les métriques d'accuracy
-    results = pd.DataFrame(grid_search.cv_results_)
-
-    # Créer un DataFrame similaire à celui du MLP
-    processed_results = pd.DataFrame({
-        'model_params': results['params'],
-        'train_params': [{} for _ in range(len(results))],  # SVC n'a pas de paramètres d'entraînement spécifiques
-        'average_train_accuracy': results['mean_train_score'],
-        'average_val_accuracy': results['mean_test_score'],
-        'average_train_loss': [None] * len(results),  # SVC ne calcule pas de perte par défaut
-        'average_val_loss': [None] * len(results)     # SVC ne calcule pas de perte par défaut
-    })
-
-    # Sauvegarder les résultats dans data/results/svc
+    # Définir le répertoire des résultats
     model_results_dir = os.path.join(OUTPUT_DIR, 'svc')
     os.makedirs(model_results_dir, exist_ok=True)
-    processed_results.to_csv(os.path.join(model_results_dir, 'cross_validation_results.csv'), index=False)
+
+    # Sauvegarder les meilleurs hyperparamètres
+    cross_validator.save_best_hyperparameters(best_result, 'best_hyperparameters.json', model_results_dir)
+    cross_validator.save_train_metrics('train_metrics.json', model_results_dir)
+    
+    # Sauvegarder les résultats complets dans data/results/svc
+    results_df = pd.DataFrame(cross_validator.results)
+    results_df.to_csv(os.path.join(model_results_dir, 'cross_validation_results.csv'), index=False)
     print(f"Résultats de la cross-validation sauvegardés dans '{model_results_dir}/cross_validation_results.csv'")
 
+    # Extraire les meilleurs hyperparamètres
+    best_model_params = best_result['model_params']
+    best_score = best_result['average_val_accuracy']
+
+    # Réentraîner le meilleur modèle SVC sur l'ensemble des données d'entraînement
+    print(f"Retraining the best SVC model with params: {best_model_params}")
+
+    best_svc = SVCModel(**best_model_params, probability=False, random_state=42)
+    best_svc.train_model(X, y)
+
+    # Sauvegarder le meilleur modèle et les objets de prétraitement
+    best_model_path = os.path.join(model_results_dir, 'best_svc_model.pkl')
+    best_svc.save(best_model_path)
+    joblib.dump(scaler, os.path.join(OUTPUT_DIR, 'scaler.pkl'))
+    joblib.dump(label_encoder, os.path.join(OUTPUT_DIR, 'label_encoder.pkl'))
+    print("Entraînement terminé et meilleur modèle SVC sauvegardé.")
+
     # Visualiser les métriques supplémentaires
-    plot_metrics(processed_results, model_type='svc')
+    plot_metrics(results_df, model_type='svc')
 
 if __name__ == "__main__":
     main()
-

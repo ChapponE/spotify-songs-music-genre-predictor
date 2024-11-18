@@ -14,7 +14,7 @@ OUTPUT_DIR = os.path.join(DATA_DIR, 'results')
 # Paramètres d'optimisation généraux
 N_SPLITS = 5
 OPTIMIZER = 'adam'  # Options : 'adam', 'sgd'
-LOSS_FUNCTION = 'sparse_categorical_crossentropy'
+LOSS_FUNCTION = 'cross_entropy'
 METRICS = ['accuracy']
 EPOCHS = 10
 

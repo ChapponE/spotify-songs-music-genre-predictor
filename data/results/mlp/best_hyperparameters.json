@@ -10,8 +10,6 @@
         "epochs": 70,
         "learning_rate": 0.01
     },
-    "average_train_accuracy": 1.0,
-    "average_val_accuracy": 0.32000000178813937,
-    "average_train_loss": 0.0014538042712956667,
-    "average_val_loss": 5.5359336853027346
+    "average_train_accuracy": 0.9025000000000001,
+    "average_val_accuracy": 0.36
 }
