@@ -1,11 +1,11 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 import os
-from src.utils.config import OUTPUT_DIR
+from src.utils.config import RESULTS_DIR
 
 def plot_metrics(results, model_type='mlp'):
     model_name = model_type.lower()
-    model_results_dir = os.path.join(OUTPUT_DIR, model_name)
+    model_results_dir = os.path.join(RESULTS_DIR, model_name)
     os.makedirs(model_results_dir, exist_ok=True)
 
     # Créer des labels pour chaque configuration de modèle

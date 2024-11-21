@@ -1,3 +1,3 @@
-model_params,train_params,average_train_accuracy,average_val_accuracy
-"{'hidden_layers': [64, 32]}","{'batch_size': 32, 'epochs': 70, 'learning_rate': 0.01}",0.9025000000000001,0.36
-"{'hidden_layers': [128, 64]}","{'batch_size': 32, 'epochs': 70, 'learning_rate': 0.01}",0.9049999999999999,0.36
+model_params,train_params,average_train_accuracy,average_val_accuracy,average_train_loss,average_val_loss
+"{'hidden_layers': [64, 32]}","{'batch_size': 32, 'epochs': 70, 'learning_rate': 0.01}",0.9075,0.31,1.1835767173767089,2.5116537857055667
+"{'hidden_layers': [128, 64]}","{'batch_size': 32, 'epochs': 70, 'learning_rate': 0.01}",0.8975,0.39,1.1878747558593752,2.4445614624023437

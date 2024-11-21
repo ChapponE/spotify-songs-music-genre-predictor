@@ -1,0 +1,5 @@
+model_params,train_params,average_train_accuracy,average_val_accuracy,average_train_loss,average_val_loss
+"{'d_model': 128, 'dim_feedforward': 512, 'dropout': 0.2, 'nhead': 4, 'num_layers': 2}","{'batch_size': 32, 'epochs': 10, 'learning_rate': 0.001}",0.305,0.24999999999999994,1.870337152481079,2.621538200378418
+"{'d_model': 128, 'dim_feedforward': 512, 'dropout': 0.2, 'nhead': 4, 'num_layers': 4}","{'batch_size': 32, 'epochs': 10, 'learning_rate': 0.001}",0.3,0.17,1.8779676151275637,2.643393096923828
+"{'d_model': 256, 'dim_feedforward': 512, 'dropout': 0.2, 'nhead': 4, 'num_layers': 2}","{'batch_size': 32, 'epochs': 10, 'learning_rate': 0.001}",0.27,0.22999999999999998,1.9074125671386717,2.5975580215454097
+"{'d_model': 256, 'dim_feedforward': 512, 'dropout': 0.2, 'nhead': 4, 'num_layers': 4}","{'batch_size': 32, 'epochs': 10, 'learning_rate': 0.001}",0.22749999999999998,0.21000000000000002,1.9178982734680177,2.5856461715698242

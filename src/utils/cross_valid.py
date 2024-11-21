@@ -4,14 +4,24 @@ import numpy as np
 import os
 import json
 import pandas as pd
+import matplotlib.pyplot as plt
 from sklearn.model_selection import KFold, ParameterGrid
 from src.utils.helpers import is_neural_network
 from src.models.base_model import BaseModel
-from src.utils.config import OUTPUT_DIR
+from src.utils.config import RESULTS_DIR
 
 class CrossValidator:
     def __init__(self, model_class, model_param_grid, train_param_grid, X, y, n_splits=5, fixed_params=None):
         self.model_class = model_class
+        model_param_combinations = list(ParameterGrid(model_param_grid))
+
+        #initialisation d'une instance pour avoir accès à la propriété neural_network
+        if model_param_combinations:
+            selected_params = model_param_combinations[0]
+            self.model_instance = model_class(**selected_params, **fixed_params)
+        else:
+            self.model_instance = model_class(**fixed_params)
+        
         self.model_param_grid = model_param_grid
         self.train_param_grid = train_param_grid
         self.X = X
@@ -35,7 +45,7 @@ class CrossValidator:
                 }
 
                 # Ajouter les métriques de loss si c'est un réseau de neurones
-                if is_neural_network(self.model_class):
+                if self.model_instance.neural_network:
                     metrics['train_loss'] = []
                     metrics['val_loss'] = []
 
@@ -57,7 +67,7 @@ class CrossValidator:
                     )
 
                     # Enregistrer la loss si applicable
-                    if is_neural_network(self.model_class):
+                    if self.model_instance.neural_network:
                         metrics['train_loss'].append(history.get('loss', [None])[-1])
                         metrics['val_loss'].append(
                             history.get('val_loss', [None])[-1] if history.get('val_loss', [None])[-1] is not None else None
@@ -71,7 +81,7 @@ class CrossValidator:
                     'average_val_accuracy': np.mean([acc for acc in metrics['val_accuracy'] if acc is not None]) if any(metrics['val_accuracy']) else None
                 }
 
-                if is_neural_network(self.model_class):
+                if self.model_instance.neural_network:
                     avg_metrics['average_train_loss'] = np.mean(metrics['train_loss']) if metrics['train_loss'] else None
                     avg_metrics['average_val_loss'] = np.mean([loss for loss in metrics['val_loss'] if loss is not None]) if any(metrics['val_loss']) else None
 
@@ -84,7 +94,7 @@ class CrossValidator:
     def _print_metrics(self, model_params, train_params, avg_metrics):
         print(f"Model Configuration: {model_params}")
         print(f"Training Configuration: {train_params}")
-        if is_neural_network(self.model_class):
+        if self.model_instance.neural_network:
             print(f"  Train Loss: {avg_metrics.get('average_train_loss', None):.4f}")
             if avg_metrics.get('average_val_loss', None) is not None:
                 print(f"  Val Loss: {avg_metrics.get('average_val_loss'):.4f}")
@@ -111,3 +121,55 @@ class CrossValidator:
         with open(os.path.join(directory, filename), 'w') as f:
             json.dump(self.result_history, f, indent=4)
 
+    def save_loss_plot(self, directory, metrics_filename='train_metrics.json'):
+            metrics_path = os.path.join(directory, metrics_filename)
+            if not os.path.exists(metrics_path):
+                print(f"Le fichier des métriques d'entraînement '{metrics_path}' n'existe pas.")
+                return
+
+            with open(metrics_path, 'r') as f:
+                train_metrics = json.load(f)
+
+            num_configs = len(train_metrics)
+            if num_configs == 0:
+                print("Aucune métrique de loss disponible pour le tracé.")
+                return
+
+            # Échanger les lignes et les colonnes
+            configs_per_column = self.n_splits  # Nombre de folds
+            num_columns = int(np.ceil(num_configs / configs_per_column))
+            num_rows = configs_per_column
+
+            fig, axes = plt.subplots(num_rows, num_columns, figsize=(5 * num_columns, 5 * num_rows), squeeze=False)
+            axes = axes.flatten()
+
+            for i, config_metrics in enumerate(train_metrics):
+                loss = config_metrics.get('loss', [])
+                val_loss = config_metrics.get('val_loss', [])
+                if not loss:
+                    print(f"Configuration {i+1} n'a pas de métriques de loss. Skipping.")
+                    continue
+
+                ax = axes[i]
+                epochs = range(1, len(loss) + 1)
+
+                ax.plot(epochs, loss, label='Train Loss', marker='o')
+                if val_loss:
+                    ax.plot(epochs, val_loss, label='Validation Loss', marker='x')
+
+                ax.set_yscale('log')
+                ax.set_title(f'Configuration {i+1}')
+                ax.set_xlabel('Epoch')
+                ax.set_ylabel('Loss')
+                ax.legend()
+                ax.grid(True)
+
+            # Cacher les sous-graphiques non utilisés
+            for j in range(num_configs, len(axes)):
+                fig.delaxes(axes[j])
+
+            plt.tight_layout()
+            plot_path = os.path.join(directory, 'loss_plot.png')
+            plt.savefig(plot_path)
+            print(f"Les graphiques de loss ont été sauvegardés dans '{plot_path}'.")
+            plt.close()

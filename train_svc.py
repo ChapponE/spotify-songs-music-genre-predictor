@@ -4,7 +4,7 @@ import os
 import joblib
 import pandas as pd
 from src.data.data_loader import load_data_preprocessed
-from src.utils.config import OUTPUT_DIR, SVC_PARAM_GRID, N_SPLITS
+from src.utils.config import RESULTS_DIR, SVC_PARAM_GRID, N_SPLITS
 from src.utils.cross_valid import CrossValidator
 from src.models.svc_model import SVCModel
 from src.visualization.plots import plot_metrics
@@ -36,7 +36,7 @@ def main():
     best_result = cross_validator.perform_cross_validation()
 
     # Définir le répertoire des résultats
-    model_results_dir = os.path.join(OUTPUT_DIR, 'svc')
+    model_results_dir = os.path.join(RESULTS_DIR, 'svc')
     os.makedirs(model_results_dir, exist_ok=True)
 
     # Sauvegarder les meilleurs hyperparamètres
@@ -61,8 +61,8 @@ def main():
     # Sauvegarder le meilleur modèle et les objets de prétraitement
     best_model_path = os.path.join(model_results_dir, 'best_svc_model.pkl')
     best_svc.save(best_model_path)
-    joblib.dump(scaler, os.path.join(OUTPUT_DIR, 'scaler.pkl'))
-    joblib.dump(label_encoder, os.path.join(OUTPUT_DIR, 'label_encoder.pkl'))
+    joblib.dump(scaler, os.path.join(RESULTS_DIR, 'scaler.pkl'))
+    joblib.dump(label_encoder, os.path.join(RESULTS_DIR, 'label_encoder.pkl'))
     print("Entraînement terminé et meilleur modèle SVC sauvegardé.")
 
     # Visualiser les métriques supplémentaires

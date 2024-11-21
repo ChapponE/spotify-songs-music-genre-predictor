@@ -1,0 +1,5 @@
+model_params,train_params,average_train_accuracy,average_val_accuracy
+"{'bootstrap': True, 'max_depth': 10, 'min_samples_leaf': 4, 'min_samples_split': 5, 'n_estimators': 100}",{},0.9574999999999999,0.39
+"{'bootstrap': True, 'max_depth': 10, 'min_samples_leaf': 4, 'min_samples_split': 10, 'n_estimators': 100}",{},0.915,0.37
+"{'bootstrap': True, 'max_depth': 20, 'min_samples_leaf': 4, 'min_samples_split': 5, 'n_estimators': 100}",{},0.9574999999999999,0.39
+"{'bootstrap': True, 'max_depth': 20, 'min_samples_leaf': 4, 'min_samples_split': 10, 'n_estimators': 100}",{},0.915,0.37

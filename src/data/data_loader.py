@@ -3,7 +3,7 @@ import pandas as pd
 import joblib
 import numpy as np
 from sklearn.preprocessing import LabelEncoder, StandardScaler
-from src.utils.config import TRAIN_CSV, TEST_CSV, OUTPUT_DIR, PROCESSED_DIR, TEST
+from src.utils.config import TRAIN_CSV, TEST_CSV, RESULTS_DIR, PROCESSED_DIR, TEST
 
 
 def load_data():

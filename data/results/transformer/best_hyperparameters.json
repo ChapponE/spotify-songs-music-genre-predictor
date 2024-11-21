@@ -1,0 +1,18 @@
+{
+    "model_params": {
+        "d_model": 128,
+        "dim_feedforward": 512,
+        "dropout": 0.2,
+        "nhead": 4,
+        "num_layers": 2
+    },
+    "train_params": {
+        "batch_size": 32,
+        "epochs": 10,
+        "learning_rate": 0.001
+    },
+    "average_train_accuracy": 0.305,
+    "average_val_accuracy": 0.24999999999999994,
+    "average_train_loss": 1.870337152481079,
+    "average_val_loss": 2.621538200378418
+}

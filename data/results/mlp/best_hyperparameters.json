@@ -1,8 +1,8 @@
 {
     "model_params": {
         "hidden_layers": [
-            64,
-            32
+            128,
+            64
         ]
     },
     "train_params": {
@@ -10,6 +10,8 @@
         "epochs": 70,
         "learning_rate": 0.01
     },
-    "average_train_accuracy": 0.9025000000000001,
-    "average_val_accuracy": 0.36
+    "average_train_accuracy": 0.8975,
+    "average_val_accuracy": 0.39,
+    "average_train_loss": 1.1878747558593752,
+    "average_val_loss": 2.4445614624023437
 }
