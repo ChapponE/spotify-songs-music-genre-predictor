@@ -13,7 +13,7 @@ from src.visualization.plots import plot_metrics
 def main():
     # Charger les données prétraitées
     X, y, scaler, label_encoder = load_data_preprocessed()
-    
+
     input_size = X.shape[1]
     output_size = len(np.unique(y))
 
@@ -40,16 +40,16 @@ def main():
         fixed_params=fixed_params 
     )
     best_result = cross_validator.perform_cross_validation()
-    
+
     # Définir le répertoire des résultats
     model_results_dir = os.path.join(RESULTS_DIR, 'mlp')
     os.makedirs(model_results_dir, exist_ok=True)
-    
+
     # Sauvegarder les meilleurs hyperparamètres
     cross_validator.save_best_hyperparameters(best_result, 'best_hyperparameters.json', model_results_dir)
     cross_validator.save_train_metrics('train_metrics.json', model_results_dir)
 
-    # Sauvegarder les résultats complets dans data/results/mlp
+    # Sauvegarder les résultats complets de la cross-validation
     results_df = pd.DataFrame(cross_validator.results)
     results_df.to_csv(os.path.join(model_results_dir, 'cross_validation_results.csv'), index=False)
     print(f"Résultats de la cross-validation sauvegardés dans '{model_results_dir}/cross_validation_results.csv'")
@@ -75,7 +75,7 @@ def main():
         loss_name=LOSS_FUNCTION
     )
 
-    # pas de validation ici
+    # Pas de validation ici
     history = model.train_model(
         X_train=X,
         y_train=y,
@@ -85,7 +85,7 @@ def main():
         batch_size=batch_size
     )
     model.save(os.path.join(model_results_dir, 'mlp_model.pth'))
-    print("Model training completed and saved.")
+    print("Entraînement terminé et modèle MLP sauvegardé.")
 
     # Sauvegarder l'historique d'entraînement
     train_history = pd.DataFrame(history)

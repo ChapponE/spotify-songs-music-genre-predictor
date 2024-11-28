@@ -1,9 +1,9 @@
 {
     "model_params": {
-        "C": 100,
-        "kernel": "linear"
+        "C": 1,
+        "kernel": "rbf"
     },
     "train_params": {},
-    "average_train_accuracy": 0.8525,
-    "average_val_accuracy": 0.37
+    "average_train_accuracy": 0.6683333333333333,
+    "average_val_accuracy": 0.491
 }

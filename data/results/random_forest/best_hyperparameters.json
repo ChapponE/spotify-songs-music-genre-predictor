@@ -1,12 +1,12 @@
 {
     "model_params": {
         "bootstrap": true,
-        "max_depth": 10,
+        "max_depth": 20,
         "min_samples_leaf": 4,
         "min_samples_split": 5,
-        "n_estimators": 100
+        "n_estimators": 50
     },
     "train_params": {},
-    "average_train_accuracy": 0.9574999999999999,
-    "average_val_accuracy": 0.39
+    "average_train_accuracy": 0.9153333333333333,
+    "average_val_accuracy": 0.499
 }

@@ -33,6 +33,14 @@ def plot_metrics(results, model_type='mlp'):
         fig, axs = plt.subplots(1, 2, figsize=(14, 5))
         axs = axs.flatten()  # Convertir en liste plate
 
+    num_ticks = 10
+    if len(configurations) > num_ticks:
+        tick_indices = list(range(0, len(configurations), max(1, len(configurations) // num_ticks)))
+        tick_labels = [configurations[i] for i in tick_indices]
+    else:
+        tick_indices = range(len(configurations))
+        tick_labels = configurations
+
     # Tracer l'Accuracy d'entraînement
     axs[0].plot(configurations, train_accuracies, marker='o', color='blue', label='Train Accuracy')
     axs[0].set_title('Train Accuracy')
@@ -40,7 +48,8 @@ def plot_metrics(results, model_type='mlp'):
     axs[0].set_ylabel('Accuracy')
     axs[0].legend()
     axs[0].grid(True)
-    axs[0].set_xticks(configurations)
+    axs[0].set_xticks(tick_indices)
+    axs[0].set_xticklabels(tick_labels)
 
     # Tracer l'Accuracy de validation
     axs[1].plot(configurations, val_accuracies, marker='x', color='orange', label='Validation Accuracy')
@@ -49,7 +58,8 @@ def plot_metrics(results, model_type='mlp'):
     axs[1].set_ylabel('Accuracy')
     axs[1].legend()
     axs[1].grid(True)
-    axs[1].set_xticks(configurations)
+    axs[1].set_xticks(tick_indices)
+    axs[1].set_xticklabels(tick_labels)
 
     if has_losses:
         # Tracer la Loss d'entraînement
@@ -60,7 +70,8 @@ def plot_metrics(results, model_type='mlp'):
         axs[2].set_ylabel('Loss')
         axs[2].legend()
         axs[2].grid(True)
-        axs[2].set_xticks(configurations)
+        axs[2].set_xticks(tick_indices)
+        axs[2].set_xticklabels(tick_labels)
 
         # Tracer la Loss de validation
         val_losses = results['average_val_loss'].tolist()
@@ -70,10 +81,10 @@ def plot_metrics(results, model_type='mlp'):
         axs[3].set_ylabel('Loss')
         axs[3].legend()
         axs[3].grid(True)
-        axs[3].set_xticks(configurations)
-
-    # Ajouter un titre général
-    plt.suptitle(f"Évolution des Métriques pour chaque Configuration {model_type.upper()}", fontsize=16)
+        axs[3].set_xticks(tick_indices)
+        axs[3].set_xticklabels(tick_labels)
+        # Ajouter un titre général
+        plt.suptitle(f"Évolution des Métriques pour chaque Configuration {model_type.upper()}", fontsize=16)
 
     # Ajuster la disposition
     plt.tight_layout(rect=[0, 0.03, 1, 0.95])

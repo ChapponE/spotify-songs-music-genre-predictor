@@ -1,10 +1,10 @@
 [
     {
         "accuracy": [
-            0.9875
+            0.6386666666666667
         ],
         "val_accuracy": [
-            0.4
+            0.496
         ],
         "loss": [
             null
@@ -15,7 +15,385 @@
     },
     {
         "accuracy": [
-            0.975
+            0.6826666666666666
+        ],
+        "val_accuracy": [
+            0.46
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6613333333333333
+        ],
+        "val_accuracy": [
+            0.484
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.656
+        ],
+        "val_accuracy": [
+            0.472
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6693333333333333
+        ],
+        "val_accuracy": [
+            0.484
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6826666666666666
+        ],
+        "val_accuracy": [
+            0.472
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6746666666666666
+        ],
+        "val_accuracy": [
+            0.464
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6613333333333333
+        ],
+        "val_accuracy": [
+            0.468
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.668
+        ],
+        "val_accuracy": [
+            0.496
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6853333333333333
+        ],
+        "val_accuracy": [
+            0.468
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6693333333333333
+        ],
+        "val_accuracy": [
+            0.464
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.676
+        ],
+        "val_accuracy": [
+            0.48
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6426666666666667
+        ],
+        "val_accuracy": [
+            0.476
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6653333333333333
+        ],
+        "val_accuracy": [
+            0.472
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6666666666666666
+        ],
+        "val_accuracy": [
+            0.464
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6533333333333333
+        ],
+        "val_accuracy": [
+            0.476
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.668
+        ],
+        "val_accuracy": [
+            0.492
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6866666666666666
+        ],
+        "val_accuracy": [
+            0.472
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6746666666666666
+        ],
+        "val_accuracy": [
+            0.496
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6626666666666666
+        ],
+        "val_accuracy": [
+            0.472
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6653333333333333
+        ],
+        "val_accuracy": [
+            0.492
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6746666666666666
+        ],
+        "val_accuracy": [
+            0.48
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6706666666666666
+        ],
+        "val_accuracy": [
+            0.468
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.664
+        ],
+        "val_accuracy": [
+            0.492
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.656
+        ],
+        "val_accuracy": [
+            0.488
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6466666666666666
+        ],
+        "val_accuracy": [
+            0.476
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.652
+        ],
+        "val_accuracy": [
+            0.452
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.648
+        ],
+        "val_accuracy": [
+            0.496
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6586666666666666
         ],
         "val_accuracy": [
             0.5
@@ -29,10 +407,10 @@
     },
     {
         "accuracy": [
-            0.95
+            0.664
         ],
         "val_accuracy": [
-            0.35
+            0.472
         ],
         "loss": [
             null
@@ -43,10 +421,10 @@
     },
     {
         "accuracy": [
-            0.9375
+            0.6466666666666666
         ],
         "val_accuracy": [
-            0.35
+            0.468
         ],
         "loss": [
             null
@@ -57,10 +435,10 @@
     },
     {
         "accuracy": [
-            0.9375
+            0.6426666666666667
         ],
         "val_accuracy": [
-            0.35
+            0.472
         ],
         "loss": [
             null
@@ -71,91 +449,7 @@
     },
     {
         "accuracy": [
-            0.95
-        ],
-        "val_accuracy": [
-            0.3
-        ],
-        "loss": [
-            null
-        ],
-        "val_loss": [
-            null
-        ]
-    },
-    {
-        "accuracy": [
-            0.925
-        ],
-        "val_accuracy": [
-            0.45
-        ],
-        "loss": [
-            null
-        ],
-        "val_loss": [
-            null
-        ]
-    },
-    {
-        "accuracy": [
-            0.9
-        ],
-        "val_accuracy": [
-            0.35
-        ],
-        "loss": [
-            null
-        ],
-        "val_loss": [
-            null
-        ]
-    },
-    {
-        "accuracy": [
-            0.8625
-        ],
-        "val_accuracy": [
-            0.4
-        ],
-        "loss": [
-            null
-        ],
-        "val_loss": [
-            null
-        ]
-    },
-    {
-        "accuracy": [
-            0.9375
-        ],
-        "val_accuracy": [
-            0.35
-        ],
-        "loss": [
-            null
-        ],
-        "val_loss": [
-            null
-        ]
-    },
-    {
-        "accuracy": [
-            0.9875
-        ],
-        "val_accuracy": [
-            0.4
-        ],
-        "loss": [
-            null
-        ],
-        "val_loss": [
-            null
-        ]
-    },
-    {
-        "accuracy": [
-            0.975
+            0.656
         ],
         "val_accuracy": [
             0.5
@@ -169,10 +463,10 @@
     },
     {
         "accuracy": [
-            0.95
+            0.6613333333333333
         ],
         "val_accuracy": [
-            0.35
+            0.48
         ],
         "loss": [
             null
@@ -183,10 +477,10 @@
     },
     {
         "accuracy": [
-            0.9375
+            0.648
         ],
         "val_accuracy": [
-            0.35
+            0.46
         ],
         "loss": [
             null
@@ -197,10 +491,10 @@
     },
     {
         "accuracy": [
-            0.9375
+            0.648
         ],
         "val_accuracy": [
-            0.35
+            0.476
         ],
         "loss": [
             null
@@ -211,10 +505,10 @@
     },
     {
         "accuracy": [
-            0.95
+            0.628
         ],
         "val_accuracy": [
-            0.3
+            0.496
         ],
         "loss": [
             null
@@ -225,10 +519,10 @@
     },
     {
         "accuracy": [
-            0.925
+            0.6426666666666667
         ],
         "val_accuracy": [
-            0.45
+            0.468
         ],
         "loss": [
             null
@@ -239,10 +533,10 @@
     },
     {
         "accuracy": [
-            0.9
+            0.648
         ],
         "val_accuracy": [
-            0.35
+            0.476
         ],
         "loss": [
             null
@@ -253,10 +547,10 @@
     },
     {
         "accuracy": [
-            0.8625
+            0.6346666666666667
         ],
         "val_accuracy": [
-            0.4
+            0.476
         ],
         "loss": [
             null
@@ -267,10 +561,3972 @@
     },
     {
         "accuracy": [
-            0.9375
+            0.6546666666666666
         ],
         "val_accuracy": [
-            0.35
+            0.52
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6573333333333333
+        ],
+        "val_accuracy": [
+            0.452
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.66
+        ],
+        "val_accuracy": [
+            0.48
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6386666666666667
+        ],
+        "val_accuracy": [
+            0.476
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.652
+        ],
+        "val_accuracy": [
+            0.52
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6613333333333333
+        ],
+        "val_accuracy": [
+            0.46
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.656
+        ],
+        "val_accuracy": [
+            0.492
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6466666666666666
+        ],
+        "val_accuracy": [
+            0.484
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.628
+        ],
+        "val_accuracy": [
+            0.496
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6426666666666667
+        ],
+        "val_accuracy": [
+            0.468
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.648
+        ],
+        "val_accuracy": [
+            0.476
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6346666666666667
+        ],
+        "val_accuracy": [
+            0.476
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6546666666666666
+        ],
+        "val_accuracy": [
+            0.52
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6573333333333333
+        ],
+        "val_accuracy": [
+            0.452
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.66
+        ],
+        "val_accuracy": [
+            0.48
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6386666666666667
+        ],
+        "val_accuracy": [
+            0.476
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.652
+        ],
+        "val_accuracy": [
+            0.52
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6613333333333333
+        ],
+        "val_accuracy": [
+            0.46
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.656
+        ],
+        "val_accuracy": [
+            0.492
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6466666666666666
+        ],
+        "val_accuracy": [
+            0.484
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.628
+        ],
+        "val_accuracy": [
+            0.496
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6426666666666667
+        ],
+        "val_accuracy": [
+            0.468
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.648
+        ],
+        "val_accuracy": [
+            0.476
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6346666666666667
+        ],
+        "val_accuracy": [
+            0.476
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6546666666666666
+        ],
+        "val_accuracy": [
+            0.52
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6573333333333333
+        ],
+        "val_accuracy": [
+            0.452
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.66
+        ],
+        "val_accuracy": [
+            0.48
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6386666666666667
+        ],
+        "val_accuracy": [
+            0.476
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.652
+        ],
+        "val_accuracy": [
+            0.52
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6613333333333333
+        ],
+        "val_accuracy": [
+            0.46
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.656
+        ],
+        "val_accuracy": [
+            0.492
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6466666666666666
+        ],
+        "val_accuracy": [
+            0.484
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.612
+        ],
+        "val_accuracy": [
+            0.496
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6226666666666667
+        ],
+        "val_accuracy": [
+            0.464
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.612
+        ],
+        "val_accuracy": [
+            0.46
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.5986666666666667
+        ],
+        "val_accuracy": [
+            0.464
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.608
+        ],
+        "val_accuracy": [
+            0.516
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6266666666666667
+        ],
+        "val_accuracy": [
+            0.48
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6266666666666667
+        ],
+        "val_accuracy": [
+            0.468
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.604
+        ],
+        "val_accuracy": [
+            0.488
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6066666666666667
+        ],
+        "val_accuracy": [
+            0.516
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.628
+        ],
+        "val_accuracy": [
+            0.468
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.62
+        ],
+        "val_accuracy": [
+            0.468
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.608
+        ],
+        "val_accuracy": [
+            0.492
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.612
+        ],
+        "val_accuracy": [
+            0.496
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6226666666666667
+        ],
+        "val_accuracy": [
+            0.464
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.612
+        ],
+        "val_accuracy": [
+            0.46
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.5986666666666667
+        ],
+        "val_accuracy": [
+            0.464
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.608
+        ],
+        "val_accuracy": [
+            0.516
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6266666666666667
+        ],
+        "val_accuracy": [
+            0.48
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6266666666666667
+        ],
+        "val_accuracy": [
+            0.468
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.604
+        ],
+        "val_accuracy": [
+            0.488
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6066666666666667
+        ],
+        "val_accuracy": [
+            0.516
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.628
+        ],
+        "val_accuracy": [
+            0.468
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.62
+        ],
+        "val_accuracy": [
+            0.468
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.608
+        ],
+        "val_accuracy": [
+            0.492
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.612
+        ],
+        "val_accuracy": [
+            0.496
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6226666666666667
+        ],
+        "val_accuracy": [
+            0.464
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.612
+        ],
+        "val_accuracy": [
+            0.46
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.5986666666666667
+        ],
+        "val_accuracy": [
+            0.464
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.608
+        ],
+        "val_accuracy": [
+            0.516
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6266666666666667
+        ],
+        "val_accuracy": [
+            0.48
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6266666666666667
+        ],
+        "val_accuracy": [
+            0.468
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.604
+        ],
+        "val_accuracy": [
+            0.488
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6066666666666667
+        ],
+        "val_accuracy": [
+            0.516
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.628
+        ],
+        "val_accuracy": [
+            0.468
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.62
+        ],
+        "val_accuracy": [
+            0.468
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.608
+        ],
+        "val_accuracy": [
+            0.492
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.8853333333333333
+        ],
+        "val_accuracy": [
+            0.5
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.8746666666666667
+        ],
+        "val_accuracy": [
+            0.456
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.9013333333333333
+        ],
+        "val_accuracy": [
+            0.492
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.8813333333333333
+        ],
+        "val_accuracy": [
+            0.484
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.9053333333333333
+        ],
+        "val_accuracy": [
+            0.504
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.8906666666666667
+        ],
+        "val_accuracy": [
+            0.456
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.9133333333333333
+        ],
+        "val_accuracy": [
+            0.468
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.904
+        ],
+        "val_accuracy": [
+            0.516
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.9173333333333333
+        ],
+        "val_accuracy": [
+            0.52
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.892
+        ],
+        "val_accuracy": [
+            0.46
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.9106666666666666
+        ],
+        "val_accuracy": [
+            0.468
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.9053333333333333
+        ],
+        "val_accuracy": [
+            0.496
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.8786666666666667
+        ],
+        "val_accuracy": [
+            0.496
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.8706666666666667
+        ],
+        "val_accuracy": [
+            0.456
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.896
+        ],
+        "val_accuracy": [
+            0.48
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.8653333333333333
+        ],
+        "val_accuracy": [
+            0.48
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.884
+        ],
+        "val_accuracy": [
+            0.504
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.8813333333333333
+        ],
+        "val_accuracy": [
+            0.472
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.88
+        ],
+        "val_accuracy": [
+            0.488
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.876
+        ],
+        "val_accuracy": [
+            0.508
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.892
+        ],
+        "val_accuracy": [
+            0.492
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.8786666666666667
+        ],
+        "val_accuracy": [
+            0.472
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.8813333333333333
+        ],
+        "val_accuracy": [
+            0.48
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.88
+        ],
+        "val_accuracy": [
+            0.524
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.812
+        ],
+        "val_accuracy": [
+            0.504
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.816
+        ],
+        "val_accuracy": [
+            0.48
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.824
+        ],
+        "val_accuracy": [
+            0.504
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.812
+        ],
+        "val_accuracy": [
+            0.472
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.8226666666666667
+        ],
+        "val_accuracy": [
+            0.496
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.8333333333333334
+        ],
+        "val_accuracy": [
+            0.468
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.8213333333333334
+        ],
+        "val_accuracy": [
+            0.504
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.8226666666666667
+        ],
+        "val_accuracy": [
+            0.516
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.8346666666666667
+        ],
+        "val_accuracy": [
+            0.496
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.8306666666666667
+        ],
+        "val_accuracy": [
+            0.464
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.82
+        ],
+        "val_accuracy": [
+            0.48
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.8213333333333334
+        ],
+        "val_accuracy": [
+            0.512
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.764
+        ],
+        "val_accuracy": [
+            0.492
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.7866666666666666
+        ],
+        "val_accuracy": [
+            0.46
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.7613333333333333
+        ],
+        "val_accuracy": [
+            0.508
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.7706666666666667
+        ],
+        "val_accuracy": [
+            0.504
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.7746666666666666
+        ],
+        "val_accuracy": [
+            0.508
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.7853333333333333
+        ],
+        "val_accuracy": [
+            0.46
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.7626666666666667
+        ],
+        "val_accuracy": [
+            0.5
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.772
+        ],
+        "val_accuracy": [
+            0.504
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.7906666666666666
+        ],
+        "val_accuracy": [
+            0.516
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.78
+        ],
+        "val_accuracy": [
+            0.472
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.768
+        ],
+        "val_accuracy": [
+            0.5
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.772
+        ],
+        "val_accuracy": [
+            0.5
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.764
+        ],
+        "val_accuracy": [
+            0.492
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.7866666666666666
+        ],
+        "val_accuracy": [
+            0.46
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.7613333333333333
+        ],
+        "val_accuracy": [
+            0.508
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.7706666666666667
+        ],
+        "val_accuracy": [
+            0.504
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.7746666666666666
+        ],
+        "val_accuracy": [
+            0.508
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.7853333333333333
+        ],
+        "val_accuracy": [
+            0.46
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.7626666666666667
+        ],
+        "val_accuracy": [
+            0.5
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.772
+        ],
+        "val_accuracy": [
+            0.504
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.7906666666666666
+        ],
+        "val_accuracy": [
+            0.516
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.78
+        ],
+        "val_accuracy": [
+            0.472
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.768
+        ],
+        "val_accuracy": [
+            0.5
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.772
+        ],
+        "val_accuracy": [
+            0.5
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.764
+        ],
+        "val_accuracy": [
+            0.492
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.7866666666666666
+        ],
+        "val_accuracy": [
+            0.46
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.7613333333333333
+        ],
+        "val_accuracy": [
+            0.508
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.7706666666666667
+        ],
+        "val_accuracy": [
+            0.504
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.7746666666666666
+        ],
+        "val_accuracy": [
+            0.508
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.7853333333333333
+        ],
+        "val_accuracy": [
+            0.46
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.7626666666666667
+        ],
+        "val_accuracy": [
+            0.5
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.772
+        ],
+        "val_accuracy": [
+            0.504
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.7906666666666666
+        ],
+        "val_accuracy": [
+            0.516
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.78
+        ],
+        "val_accuracy": [
+            0.472
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.768
+        ],
+        "val_accuracy": [
+            0.5
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.772
+        ],
+        "val_accuracy": [
+            0.5
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6573333333333333
+        ],
+        "val_accuracy": [
+            0.504
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6506666666666666
+        ],
+        "val_accuracy": [
+            0.456
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6333333333333333
+        ],
+        "val_accuracy": [
+            0.436
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6413333333333333
+        ],
+        "val_accuracy": [
+            0.476
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6533333333333333
+        ],
+        "val_accuracy": [
+            0.512
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.656
+        ],
+        "val_accuracy": [
+            0.464
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6533333333333333
+        ],
+        "val_accuracy": [
+            0.456
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6373333333333333
+        ],
+        "val_accuracy": [
+            0.492
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.66
+        ],
+        "val_accuracy": [
+            0.484
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6626666666666666
+        ],
+        "val_accuracy": [
+            0.456
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.66
+        ],
+        "val_accuracy": [
+            0.468
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.64
+        ],
+        "val_accuracy": [
+            0.492
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6573333333333333
+        ],
+        "val_accuracy": [
+            0.504
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6506666666666666
+        ],
+        "val_accuracy": [
+            0.456
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6333333333333333
+        ],
+        "val_accuracy": [
+            0.436
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6413333333333333
+        ],
+        "val_accuracy": [
+            0.476
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6533333333333333
+        ],
+        "val_accuracy": [
+            0.512
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.656
+        ],
+        "val_accuracy": [
+            0.464
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6533333333333333
+        ],
+        "val_accuracy": [
+            0.456
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6373333333333333
+        ],
+        "val_accuracy": [
+            0.492
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.66
+        ],
+        "val_accuracy": [
+            0.484
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6626666666666666
+        ],
+        "val_accuracy": [
+            0.456
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.66
+        ],
+        "val_accuracy": [
+            0.468
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.64
+        ],
+        "val_accuracy": [
+            0.492
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6573333333333333
+        ],
+        "val_accuracy": [
+            0.504
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6506666666666666
+        ],
+        "val_accuracy": [
+            0.456
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6333333333333333
+        ],
+        "val_accuracy": [
+            0.436
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6413333333333333
+        ],
+        "val_accuracy": [
+            0.476
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6533333333333333
+        ],
+        "val_accuracy": [
+            0.512
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.656
+        ],
+        "val_accuracy": [
+            0.464
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6533333333333333
+        ],
+        "val_accuracy": [
+            0.456
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6373333333333333
+        ],
+        "val_accuracy": [
+            0.492
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.66
+        ],
+        "val_accuracy": [
+            0.484
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6626666666666666
+        ],
+        "val_accuracy": [
+            0.456
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.66
+        ],
+        "val_accuracy": [
+            0.468
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.64
+        ],
+        "val_accuracy": [
+            0.492
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.9173333333333333
+        ],
+        "val_accuracy": [
+            0.52
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.9146666666666666
+        ],
+        "val_accuracy": [
+            0.452
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.9226666666666666
+        ],
+        "val_accuracy": [
+            0.5
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.9066666666666666
+        ],
+        "val_accuracy": [
+            0.524
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.928
+        ],
+        "val_accuracy": [
+            0.528
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.9133333333333333
+        ],
+        "val_accuracy": [
+            0.468
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.9266666666666666
+        ],
+        "val_accuracy": [
+            0.5
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.9226666666666666
+        ],
+        "val_accuracy": [
+            0.5
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.9386666666666666
+        ],
+        "val_accuracy": [
+            0.532
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.912
+        ],
+        "val_accuracy": [
+            0.468
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.924
+        ],
+        "val_accuracy": [
+            0.472
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.928
+        ],
+        "val_accuracy": [
+            0.516
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.8973333333333333
+        ],
+        "val_accuracy": [
+            0.492
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.8773333333333333
+        ],
+        "val_accuracy": [
+            0.456
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.892
+        ],
+        "val_accuracy": [
+            0.488
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.872
+        ],
+        "val_accuracy": [
+            0.492
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.9146666666666666
+        ],
+        "val_accuracy": [
+            0.496
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.8893333333333333
+        ],
+        "val_accuracy": [
+            0.472
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.9013333333333333
+        ],
+        "val_accuracy": [
+            0.488
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.8893333333333333
+        ],
+        "val_accuracy": [
+            0.48
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.9106666666666666
+        ],
+        "val_accuracy": [
+            0.5
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.8893333333333333
+        ],
+        "val_accuracy": [
+            0.468
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.904
+        ],
+        "val_accuracy": [
+            0.496
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.8933333333333333
+        ],
+        "val_accuracy": [
+            0.496
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.8253333333333334
+        ],
+        "val_accuracy": [
+            0.488
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.8266666666666667
+        ],
+        "val_accuracy": [
+            0.472
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.8306666666666667
+        ],
+        "val_accuracy": [
+            0.48
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.8226666666666667
+        ],
+        "val_accuracy": [
+            0.492
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.836
+        ],
+        "val_accuracy": [
+            0.496
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.8386666666666667
+        ],
+        "val_accuracy": [
+            0.464
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.8373333333333334
+        ],
+        "val_accuracy": [
+            0.492
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.8346666666666667
+        ],
+        "val_accuracy": [
+            0.516
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.848
+        ],
+        "val_accuracy": [
+            0.504
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.836
+        ],
+        "val_accuracy": [
+            0.472
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.8386666666666667
+        ],
+        "val_accuracy": [
+            0.468
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.8346666666666667
+        ],
+        "val_accuracy": [
+            0.528
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.76
+        ],
+        "val_accuracy": [
+            0.508
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.788
+        ],
+        "val_accuracy": [
+            0.464
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.764
+        ],
+        "val_accuracy": [
+            0.504
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.7586666666666667
+        ],
+        "val_accuracy": [
+            0.5
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.7826666666666666
+        ],
+        "val_accuracy": [
+            0.508
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.7893333333333333
+        ],
+        "val_accuracy": [
+            0.46
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.772
+        ],
+        "val_accuracy": [
+            0.492
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.7666666666666667
+        ],
+        "val_accuracy": [
+            0.508
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.7893333333333333
+        ],
+        "val_accuracy": [
+            0.5
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.7826666666666666
+        ],
+        "val_accuracy": [
+            0.468
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.7693333333333333
+        ],
+        "val_accuracy": [
+            0.504
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.768
+        ],
+        "val_accuracy": [
+            0.504
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.76
+        ],
+        "val_accuracy": [
+            0.508
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.788
+        ],
+        "val_accuracy": [
+            0.464
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.764
+        ],
+        "val_accuracy": [
+            0.504
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.7586666666666667
+        ],
+        "val_accuracy": [
+            0.5
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.7826666666666666
+        ],
+        "val_accuracy": [
+            0.508
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.7893333333333333
+        ],
+        "val_accuracy": [
+            0.46
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.772
+        ],
+        "val_accuracy": [
+            0.492
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.7666666666666667
+        ],
+        "val_accuracy": [
+            0.508
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.7893333333333333
+        ],
+        "val_accuracy": [
+            0.5
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.7826666666666666
+        ],
+        "val_accuracy": [
+            0.468
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.7693333333333333
+        ],
+        "val_accuracy": [
+            0.504
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.768
+        ],
+        "val_accuracy": [
+            0.504
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.76
+        ],
+        "val_accuracy": [
+            0.508
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.788
+        ],
+        "val_accuracy": [
+            0.464
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.764
+        ],
+        "val_accuracy": [
+            0.504
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.7586666666666667
+        ],
+        "val_accuracy": [
+            0.5
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.7826666666666666
+        ],
+        "val_accuracy": [
+            0.508
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.7893333333333333
+        ],
+        "val_accuracy": [
+            0.46
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.772
+        ],
+        "val_accuracy": [
+            0.492
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.7666666666666667
+        ],
+        "val_accuracy": [
+            0.508
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.7893333333333333
+        ],
+        "val_accuracy": [
+            0.5
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.7826666666666666
+        ],
+        "val_accuracy": [
+            0.468
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.7693333333333333
+        ],
+        "val_accuracy": [
+            0.504
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.768
+        ],
+        "val_accuracy": [
+            0.504
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6613333333333333
+        ],
+        "val_accuracy": [
+            0.504
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6506666666666666
+        ],
+        "val_accuracy": [
+            0.456
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.64
+        ],
+        "val_accuracy": [
+            0.436
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6413333333333333
+        ],
+        "val_accuracy": [
+            0.476
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6533333333333333
+        ],
+        "val_accuracy": [
+            0.516
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.656
+        ],
+        "val_accuracy": [
+            0.464
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6546666666666666
+        ],
+        "val_accuracy": [
+            0.46
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6373333333333333
+        ],
+        "val_accuracy": [
+            0.492
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6613333333333333
+        ],
+        "val_accuracy": [
+            0.484
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6626666666666666
+        ],
+        "val_accuracy": [
+            0.456
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6613333333333333
+        ],
+        "val_accuracy": [
+            0.464
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.64
+        ],
+        "val_accuracy": [
+            0.492
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6613333333333333
+        ],
+        "val_accuracy": [
+            0.504
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6506666666666666
+        ],
+        "val_accuracy": [
+            0.456
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.64
+        ],
+        "val_accuracy": [
+            0.436
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6413333333333333
+        ],
+        "val_accuracy": [
+            0.476
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6533333333333333
+        ],
+        "val_accuracy": [
+            0.516
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.656
+        ],
+        "val_accuracy": [
+            0.464
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6546666666666666
+        ],
+        "val_accuracy": [
+            0.46
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6373333333333333
+        ],
+        "val_accuracy": [
+            0.492
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6613333333333333
+        ],
+        "val_accuracy": [
+            0.484
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6626666666666666
+        ],
+        "val_accuracy": [
+            0.456
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6613333333333333
+        ],
+        "val_accuracy": [
+            0.464
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.64
+        ],
+        "val_accuracy": [
+            0.492
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6613333333333333
+        ],
+        "val_accuracy": [
+            0.504
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6506666666666666
+        ],
+        "val_accuracy": [
+            0.456
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.64
+        ],
+        "val_accuracy": [
+            0.436
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6413333333333333
+        ],
+        "val_accuracy": [
+            0.476
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6533333333333333
+        ],
+        "val_accuracy": [
+            0.516
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.656
+        ],
+        "val_accuracy": [
+            0.464
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6546666666666666
+        ],
+        "val_accuracy": [
+            0.46
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6373333333333333
+        ],
+        "val_accuracy": [
+            0.492
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6613333333333333
+        ],
+        "val_accuracy": [
+            0.484
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6626666666666666
+        ],
+        "val_accuracy": [
+            0.456
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.6613333333333333
+        ],
+        "val_accuracy": [
+            0.464
+        ],
+        "loss": [
+            null
+        ],
+        "val_loss": [
+            null
+        ]
+    },
+    {
+        "accuracy": [
+            0.64
+        ],
+        "val_accuracy": [
+            0.492
         ],
         "loss": [
             null

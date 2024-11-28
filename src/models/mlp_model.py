@@ -17,11 +17,12 @@ class MLPModel(BaseModel):
         self.optimizer_name = optimizer_name
         self.loss_name = loss_name
 
-        # Définir l'architecture du réseau
+        # Définir l'architecture du réseau avec Batch Normalization
         layers = []
         in_features = input_size
         for units in hidden_layers:
             layers.append(nn.Linear(in_features, units))
+            layers.append(nn.BatchNorm1d(units))
             layers.append(nn.ReLU())
             in_features = units
         layers.append(nn.Linear(in_features, output_size))

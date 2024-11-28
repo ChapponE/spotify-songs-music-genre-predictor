@@ -58,11 +58,9 @@ def main():
     best_svc = SVCModel(**best_model_params, probability=False, random_state=42)
     best_svc.train_model(X, y)
 
-    # Sauvegarder le meilleur modèle et les objets de prétraitement
+    # Sauvegarder le meilleur modèle
     best_model_path = os.path.join(model_results_dir, 'best_svc_model.pkl')
     best_svc.save(best_model_path)
-    joblib.dump(scaler, os.path.join(RESULTS_DIR, 'scaler.pkl'))
-    joblib.dump(label_encoder, os.path.join(RESULTS_DIR, 'label_encoder.pkl'))
     print("Entraînement terminé et meilleur modèle SVC sauvegardé.")
 
     # Visualiser les métriques supplémentaires

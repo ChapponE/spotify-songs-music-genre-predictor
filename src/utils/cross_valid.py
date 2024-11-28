@@ -121,55 +121,104 @@ class CrossValidator:
         with open(os.path.join(directory, filename), 'w') as f:
             json.dump(self.result_history, f, indent=4)
 
-    def save_loss_plot(self, directory, metrics_filename='train_metrics.json'):
-            metrics_path = os.path.join(directory, metrics_filename)
-            if not os.path.exists(metrics_path):
-                print(f"Le fichier des métriques d'entraînement '{metrics_path}' n'existe pas.")
-                return
+    def save_loss_plot(self, directory, metrics_filename='train_metrics.json', results_csv='cross_validation_results.csv'):
+        metrics_path = os.path.join(directory, metrics_filename)
+        if not os.path.exists(metrics_path):
+            print(f"Le fichier des métriques d'entraînement '{metrics_path}' n'existe pas.")
+            return
 
-            with open(metrics_path, 'r') as f:
-                train_metrics = json.load(f)
+        results_csv_path = os.path.join(directory, results_csv)
+        if not os.path.exists(results_csv_path):
+            print(f"Le fichier des résultats de validation croisée '{results_csv_path}' n'existe pas.")
+            return
 
-            num_configs = len(train_metrics)
-            if num_configs == 0:
-                print("Aucune métrique de loss disponible pour le tracé.")
-                return
+        with open(metrics_path, 'r') as f:
+            train_metrics = json.load(f)
 
-            # Échanger les lignes et les colonnes
-            configs_per_column = self.n_splits  # Nombre de folds
-            num_columns = int(np.ceil(num_configs / configs_per_column))
-            num_rows = configs_per_column
+        results_df = pd.read_csv(results_csv_path)
 
-            fig, axes = plt.subplots(num_rows, num_columns, figsize=(5 * num_columns, 5 * num_rows), squeeze=False)
-            axes = axes.flatten()
+        num_configs = len(train_metrics)
+        if num_configs == 0:
+            print("Aucune métrique de loss disponible pour le tracé.")
+            return
 
-            for i, config_metrics in enumerate(train_metrics):
-                loss = config_metrics.get('loss', [])
-                val_loss = config_metrics.get('val_loss', [])
-                if not loss:
-                    print(f"Configuration {i+1} n'a pas de métriques de loss. Skipping.")
-                    continue
+        # Définir le nombre de configurations par colonne
+        configs_per_column = self.n_splits * 2  # Nombre de folds * 2
+        num_columns = int(np.ceil(num_configs / configs_per_column))
+        num_rows = configs_per_column
 
-                ax = axes[i]
-                epochs = range(1, len(loss) + 1)
+        fig, axes = plt.subplots(num_rows, num_columns, figsize=(5 * num_columns, 5 * num_rows), squeeze=False)
+        axes = axes.flatten(order='F')  # Aplatir par colonnes
 
-                ax.plot(epochs, loss, label='Train Loss', marker='o')
-                if val_loss:
-                    ax.plot(epochs, val_loss, label='Validation Loss', marker='x')
+        for i, config_metrics in enumerate(train_metrics):
+            loss = config_metrics.get('loss', [])
+            val_loss = config_metrics.get('val_loss', [])
 
-                ax.set_yscale('log')
-                ax.set_title(f'Configuration {i+1}')
-                ax.set_xlabel('Epoch')
-                ax.set_ylabel('Loss')
-                ax.legend()
-                ax.grid(True)
+            if not loss:
+                print(f"Configuration {i+1} n'a pas de métriques de loss. Ignorée.")
+                continue
 
-            # Cacher les sous-graphiques non utilisés
-            for j in range(num_configs, len(axes)):
-                fig.delaxes(axes[j])
+            if i >= len(axes):
+                print(f"Index {i} hors limites pour les axes disponibles. Ignorée.")
+                continue
 
-            plt.tight_layout()
-            plot_path = os.path.join(directory, 'loss_plot.png')
-            plt.savefig(plot_path)
-            print(f"Les graphiques de loss ont été sauvegardés dans '{plot_path}'.")
-            plt.close()
+            ax = axes[i]
+            epochs = range(1, len(loss) + 1)
+
+            ax.plot(epochs, loss, label='Train Loss', marker='o')
+            if val_loss:
+                ax.plot(epochs, val_loss, label='Validation Loss', marker='x')
+
+            ax.set_yscale('log')
+            ax.set_xlabel('Époque')
+            ax.set_ylabel('Loss')
+            ax.legend()
+            ax.grid(True)
+
+            # Calculer les indices de ligne et de colonne
+            row = i % num_rows
+            col = i // num_rows
+
+            # Définir le titre tous les 4 itérations
+            if i % 4 == 0:
+                csv_index = i // 4
+                if csv_index < len(results_df):
+                    model_params_str = results_df.loc[csv_index, 'model_params']
+                    train_params_str = results_df.loc[csv_index, 'train_params']
+
+                    try:
+                        model_params = eval(model_params_str)
+                        train_params = eval(train_params_str)
+                    except Exception as e:
+                        print(f"Erreur lors de l'évaluation des paramètres à l'index {csv_index}: {e}")
+                        model_params = {}
+                        train_params = {}
+
+                    hidden_layers = model_params.get('hidden_layers', [])
+                    batch_size = train_params.get('batch_size', '')
+                    epochs_param = train_params.get('epochs', '')
+                    learning_rate = train_params.get('learning_rate', '')
+
+                    hidden_layers_str = ','.join(map(str, hidden_layers)) if isinstance(hidden_layers, list) else str(hidden_layers)
+                    # Correction du titre sans les guillemets
+                    title = f"hl[{hidden_layers_str}]_bs{batch_size}_e{epochs_param}_lr{learning_rate}"
+                    ax.set_title(title, color='red', fontsize=20)
+                else:
+                    ax.set_title(f'Configuration {i+1}')
+
+            # Ajouter le numéro de fold à gauche du plot le plus à gauche de chaque ligne
+            if col == 0:
+                fold_number = (row % 4) + 1
+                # Ajouter le texte du fold à gauche du plot
+                ax.annotate(f'Fold {fold_number}', xy=(-0.3, 0.5), xycoords='axes fraction',
+                            ha='right', va='center', fontsize=20, rotation=90, color='red')
+
+        # Cacher les sous-graphiques non utilisés
+        for j in range(num_configs, len(axes)):
+            fig.delaxes(axes[j])
+
+        plt.tight_layout()
+        plot_path = os.path.join(directory, 'loss_plot.png')
+        plt.savefig(plot_path)
+        print(f"Les graphiques de loss ont été sauvegardés dans '{plot_path}'.")
+        plt.close()
