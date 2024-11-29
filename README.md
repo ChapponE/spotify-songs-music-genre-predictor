@@ -1,4 +1,4 @@
-# Spotify Genre Classifier
+# Spotify Genre Classifier (En développement)
 
 Ce projet vise à classer les playlists Spotify en différents genres en utilisant des modèles de machine learning.
 
