@@ -4,53 +4,49 @@
 
 Le but est de classer les playlists Spotify en différents genres en utilisant des modèles de machine learning. Ce projet exploite diverses techniques de prétraitement des données et des algorithmes d'apprentissage automatique (features numériques ou numérique et textuelles) (MLP, SVC, RF). Le rapport associé au projet est à la racine du repository 'Rapport.pdf'.
 
-## Structure du Projet
-
-Le projet est organisé de la manière suivante :
-
-|-- data
-|   |-- brut_data
-|   |-- data_explorer
-|   |-- processed
-|   |-- results
-|   |   |-- mlp
-|   |   |-- mlp_full
-|   |   |-- random_forest
-|   |   |-- svc
-|-- predictions
-|-- src
-|   |-- data
-|   |   |-- data_explorer.py
-|   |   |-- data_loader.py
-|   |   |-- __init__.py
-|   |-- models
-|   |   |-- base_model.py
-|   |   |-- mlp_model.py
-|   |   |-- mlp_model_full.py
-|   |   |-- random_forest_model.py
-|   |   |-- svc_model.py
-|   |   |-- __init__.py
-|   |-- utils
-|   |   |-- config.py
-|   |   |-- cross_valid.py
-|   |   |-- helpers.py
-|   |   |-- __init__.py
-|   |-- visualization
-|   |   |-- plots.py
-|   |   |-- __init__.py
-|-- train
-|   |-- train_mlp.py
-|   |-- train_mlp_full.py
-|   |-- train_rf.py
-|   |-- train_svc.py
-|   |-- __init__.py
-|-- explore_data.py
-|-- hyperparameters_analysis.py
-|-- predict_mlp.py
-|-- predict_mlp_full.py
-|-- preprocess_data.py
-|-- preprocess_data_full.py
-|-- train.py
+data
+├── brut_data
+├── data_explorer
+├── processed
+└── results
+    ├── mlp
+    ├── mlp_full
+    ├── random_forest
+    └── svc
+predictions
+src
+├── data
+│   ├── data_explorer.py
+│   ├── data_loader.py
+│   └── __init__.py
+├── models
+│   ├── base_model.py
+│   ├── mlp_model.py
+│   ├── mlp_model_full.py
+│   ├── random_forest_model.py
+│   ├── svc_model.py
+│   └── __init__.py
+├── utils
+│   ├── config.py
+│   ├── cross_valid.py
+│   ├── helpers.py
+│   └── __init__.py
+└── visualization
+    ├── plots.py
+    └── __init__.py
+train
+├── train_mlp.py
+├── train_mlp_full.py
+├── train_rf.py
+├── train_svc.py
+└── __init__.py
+explore_data.py
+hyperparameters_analysis.py
+predict_mlp.py
+predict_mlp_full.py
+preprocess_data.py
+preprocess_data_full.py
+train.py
 
 
 ## Installation
