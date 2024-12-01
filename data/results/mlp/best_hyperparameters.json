@@ -5,12 +5,12 @@
         ]
     },
     "train_params": {
-        "batch_size": 64,
+        "batch_size": 256,
         "epochs": 150,
-        "learning_rate": 0.01
+        "learning_rate": 0.005
     },
-    "average_train_accuracy": 0.7436666666666667,
-    "average_val_accuracy": 0.49,
-    "average_train_loss": 1.1878988672892252,
-    "average_val_loss": 1.446304512023926
+    "average_train_accuracy": 0.725,
+    "average_val_accuracy": 0.483,
+    "average_train_loss": 1.2162650960286459,
+    "average_val_loss": 1.451019359588623
 }

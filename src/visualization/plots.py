@@ -17,7 +17,7 @@ def plot_metrics(results, model_type='mlp'):
 
     # Vérifier si les pertes sont disponibles (indiquant un réseau de neurones)
     has_losses = (
-        model_type.lower() == 'mlp' and 
+        model_type.lower() in ['mlp', 'mlp_full'] and 
         'average_train_loss' in results.columns and 
         'average_val_loss' in results.columns and
         not results['average_train_loss'].isnull().all() and

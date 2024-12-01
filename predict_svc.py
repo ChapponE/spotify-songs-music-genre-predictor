@@ -5,16 +5,14 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import accuracy_score, confusion_matrix
 import seaborn as sns
 import matplotlib.pyplot as plt
-from src.data.data_loader import load_data, get_numerical_features
+from src.data.data_loader import load_data, get_numerical_features, load_data_preprocessed
 from src.utils.config import PROCESSED_DIR, RESULTS_DIR, TEST_CSV
 
 def main():
-    # Charger les données de test
-    _, test_df = load_data()
-
-    # Charger les objets de prétraitement
-    scaler = joblib.load(os.path.join(PROCESSED_DIR, 'scaler.pkl'))
-    label_encoder = joblib.load(os.path.join(PROCESSED_DIR, 'label_encoder.pkl'))
+    model_results_dir = os.path.join(RESULTS_DIR, 'svc')
+    # Charger les données prétraitées
+    _, _, scaler, label_encoder = load_data_preprocessed()
+    _, test_df = load_data(all_data=True)
 
     # Sélectionner les features numériques
     X_test = get_numerical_features(test_df)
@@ -35,7 +33,7 @@ def main():
     test_df['predicted_genre_svc'] = predicted_labels_svc
 
     # Sauvegarder les prédictions
-    prediction_path = os.path.join(RESULTS_DIR, 'test_predictions_svc.csv')
+    prediction_path = os.path.join(model_results_dir, 'test_predictions_svc.csv')
     test_df.to_csv(prediction_path, index=False)
     print(f"Les prédictions SVM ont été sauvegardées dans '{prediction_path}'.")
 

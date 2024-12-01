@@ -7,8 +7,11 @@ TEST = False  # Set to True to process only 100 data
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 DATA_DIR = os.path.join(BASE_DIR, 'data')
 PROCESSED_DIR = os.path.join(DATA_DIR, 'processed')
+PROCESSED_DIR_FULL = os.path.join(DATA_DIR, 'processed_full')
 TRAIN_CSV = os.path.join(DATA_DIR, 'brut_data', 'train.csv')
 TEST_CSV = os.path.join(DATA_DIR, 'brut_data', 'test.csv')
+TRAIN_FULL_CSV = os.path.join(DATA_DIR, 'brut_data', 'train_full.csv')
+TEST_FULL_CSV = os.path.join(DATA_DIR, 'brut_data', 'test_full.csv')
 RESULTS_DIR = os.path.join(DATA_DIR, 'results')
 
 # Paramètres d'optimisation généraux
@@ -18,39 +21,26 @@ LOSS_FUNCTION = 'cross_entropy'
 METRICS = ['accuracy']
 EPOCHS = 150
 
-# Hyperparamètres optimisés du modèle Transformer pour des données tabulaires de petite dimension
-TRANSFORMER_PARAMS = {
-    'train_param_grid': {
-        'learning_rate': [0.0005, 0.001, 0.005],
-        'batch_size': [16, 32],
-        'epochs': [150]
-    },
-    'transformer_param_grid': {
-        'num_layers': [1, 2],                # Nombre de couches Transformer réduites pour éviter le surapprentissage
-        'd_model': [16, 32],                  # Dimensionnalité des embeddings ajustée pour petites entrées
-        'nhead': [2, 4],                      # Nombre de têtes d'attention
-        'dim_feedforward': [10, 20],         # Dimension du réseau feedforward
-        'dropout': [0.2]                  # Taux de dropout pour régularisation
-    }
-}
-
 # Hyperparamètres du modèle MLP
 MLP_PARAMS = {   'train_param_grid': {    
-        'learning_rate': [0.1, 0.01],
-        'batch_size': [64, 256],
+        'learning_rate': [0.05, 0.005],
+        'batch_size': [256, 512],
         'epochs': [150]},
         
 
     'mlp_param_grid': {
-        'hidden_layers': [ [32],
-            [64],
-            [8, 8],
-            [16, 16],
-            [32, 32],          
-            [16, 16, 16],
-            [32, 32, 32]
-            ]}
+        'hidden_layers': [ [2], [4], [8], [16], [32], [64], [2, 2], [4, 4] ]}
     }
+
+# Hyperparamètres du modèle MLP complet
+MLP_FULL_PARAMS = {
+    'train_param_grid': {
+        'learning_rate': [0.05, 0.005],
+        'batch_size': [256, 512],
+        'epochs': [150]},
+    'mlp_full_param_grid': {
+        'hidden_layers': [ [2], [4], [8], [16], [32], [64], [2, 2], [4, 4] ]}
+}
 
 # Hyperparamètres du modèle SVM
 SVC_PARAM_GRID = {

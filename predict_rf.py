@@ -7,29 +7,14 @@ import json
 from sklearn.metrics import accuracy_score, confusion_matrix
 import seaborn as sns
 import matplotlib.pyplot as plt
-from src.data.data_loader import load_data, get_numerical_features
+from src.data.data_loader import load_data, get_numerical_features, load_data_preprocessed
 from src.models.random_forest_model import RandomForestModel
 from src.utils.config import PROCESSED_DIR, RESULTS_DIR, TEST_CSV
 
 def main():
-    # Charger les données de test
-    _, test_df = load_data()
-
-    # Charger les objets de prétraitement
-    scaler_path = os.path.join(PROCESSED_DIR, 'scaler.pkl')
-    label_encoder_path = os.path.join(PROCESSED_DIR, 'label_encoder.pkl')
-    
-    # Vérifier si le scaler existe avant de le charger
-    if os.path.exists(scaler_path):
-        scaler = joblib.load(scaler_path)
-        print("Scaler chargé.")
-    else:
-        scaler = None
-        print("Scaler non trouvé. Aucune normalisation appliquée.")
-
-    # Charger le label encoder
-    label_encoder = joblib.load(label_encoder_path)
-    print("Label encoder chargé.")
+    # Charger les données prétraitées
+    _, _, scaler, label_encoder = load_data_preprocessed()
+    _, test_df = load_data(all_data=True)
 
     # Sélectionner les features numériques
     X_test = get_numerical_features(test_df)
