@@ -4,6 +4,8 @@
 
 Le but est de classer les playlists Spotify en différents genres en utilisant des modèles de machine learning. Ce projet exploite diverses techniques de prétraitement des données et des algorithmes d'apprentissage automatique (features numériques ou numérique et textuelles) (MLP, SVC, RF). Le rapport associé au projet est à la racine du repository 'Rapport.pdf'.
 
+## Structure du Projet
+
 data
 ├── brut_data
 ├── data_explorer
