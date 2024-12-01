@@ -6,6 +6,7 @@ Le but est de classer les playlists Spotify en différents genres en utilisant d
 
 ## Structure du Projet
 
+```plaintext
 data
 ├── brut_data
 ├── data_explorer
